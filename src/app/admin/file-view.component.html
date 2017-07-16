@@ -1,0 +1,22 @@
+<h1>Document List Page</h1>
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Sr. No.</th>
+			<th>Document Name</th>
+      <th>Document date</th>
+			<th>user name</th>
+			<th>Action</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr *ngFor="let document of documentList;let i=index">
+			<td>{{i+1}}</td>
+			<td>{{document.docName}}</td>
+      <td>{{document.docTimeStamp | date: 'MM/dd/yyyy - hh:mm'}}</td>
+      <td>{{document.username}}</td>
+			<td><a (click)="downloadFile(document.docName)" style="cursor: pointer;">view</a></td>
+		</tr>
+	</tbody>
+</table>   

@@ -1,0 +1,15 @@
+  <div class="wrapper">
+    <form class="form-signin" (ngSubmit)="onSubmit()">       
+      <h2 class="clean-font">Upload file</h2>
+
+      <input type="file" class="form-control" name="fileInput" placeholder="fileInput" name="fileInput" (change)="fileChange($event)" required autofocus="" />
+      <br />
+
+      <button class="btn btn-primary btn-block" type="submit">Upload File</button>      
+    </form>
+  </div>
+  <div class="alert alert-success" role="alert" *ngIf="successStatus" >{{msg}}</div>
+  <div class="alert alert-danger" role="alert"  *ngIf="errorStatus" >{{msg}}</div>
+
+
+ 

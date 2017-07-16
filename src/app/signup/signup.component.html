@@ -1,0 +1,20 @@
+  <div class="wrapper">
+    <form class="form-signin" (ngSubmit)="onSubmit()">       
+      <h2 class="clean-font">Please login</h2>
+
+      <input type="text" class="form-control" name="username" [(ngModel)]="username" placeholder="Username" name="username" required autofocus="" />
+      <br />
+
+      <input type="password" class="form-control" name="password" [(ngModel)]="password" placeholder="Password" required /> 
+      <br />
+      
+      <input type="email" class="form-control" name="email" [(ngModel)]="email" placeholder="email" required /> 
+      <br />
+
+      <button class="btn btn-primary btn-block" type="submit">Sign up</button>  
+       <button class="btn btn-secondary btn-block" routerLink="/login" >Login</button>    
+    </form>
+  </div>
+
+  <div class="alert alert-success" role="alert" *ngIf="successStatus" >{{msg}}</div>
+  <div class="alert alert-danger" role="alert"  *ngIf="errorStatus" >{{msg}}</div>
