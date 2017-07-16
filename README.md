@@ -24,13 +24,13 @@ There are two users role
 1) ADMIN
 2) USER
 
-We have already created ADMIN for you.
-To access ADMIN PORTAL use below credentials --
-username - admin
-password - 123456
+We have already created ADMIN for you.  
+To access ADMIN PORTAL use below credentials --  
+username - admin  
+password - 123456  
 
-To create a USER yor have follow signup process.
-User has a right to access USER PORTAL.
+To create a USER yor have follow signup process.  
+User has a right to access USER PORTAL.  
 
 
 
